@@ -10,7 +10,7 @@ const Header = () => {
       >
         RELISH
       </Link>
-      <nav className="flex gap-4 sm:gap-12 font-semibold text-gray-500 items-center">
+      <nav className="flex gap-4 sm:gap-12 font-normal text-gray-500 items-center">
         <Link href={""} className="text-sm sm:text-xl">
           Home
         </Link>
