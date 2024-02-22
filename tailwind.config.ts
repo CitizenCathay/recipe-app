@@ -9,7 +9,9 @@ const config: Config = {
   theme: {
     colors: {
       primary: "#f96e24",
+      secondary: "#DC611F",
       whitePrimary: "#ffffff",
+      cardHover: "#9CA3AF",
     },
   },
   plugins: [],
