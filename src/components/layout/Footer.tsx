@@ -5,7 +5,7 @@ const Footer = () => {
     return new Date().getFullYear();
   };
   return (
-    <footer className="text-center mt-10 -mb-3 bottom-0">
+    <footer className="text-center pt-14 mt-auto -mb-3 bottom-0">
       © {getYear()} Kurai
     </footer>
   );
