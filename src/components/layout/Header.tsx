@@ -11,15 +11,21 @@ const Header = () => {
         RELISH
       </Link>
       <nav className="flex gap-6 sm:gap-12 font-normal text-gray-500 items-center">
-        <Link href={"/"} className="text-sm sm:text-lg">
+        <Link
+          href={"/"}
+          className="text-sm sm:text-lg hover:underline underline-offset-2"
+        >
           Home
         </Link>
-        <Link href={"/about"} className="text-sm sm:text-lg">
+        <Link
+          href={"/about"}
+          className="text-sm sm:text-lg hover:underline underline-offset-2"
+        >
           About
         </Link>
         <Link
           href={"/contact"}
-          className="bg-primary text-white rounded-full px-8 py-2 text-sm sm:text-lg active:bg-secondary"
+          className="bg-primary text-white rounded-full px-8 py-2 text-sm sm:text-lg active:bg-secondary hover:underline underline-offset-2"
         >
           Contact
         </Link>
