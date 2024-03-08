@@ -1,6 +1,6 @@
-import FeaturedSection from "@/components/layout/FeaturedSection";
-import Hero from "@/components/layout/Hero";
-import TrendingSection from "@/components/layout/TrendingSection";
+import FeaturedSection from "@/components/HomePage/FeaturedSection";
+import Hero from "@/components/HomePage/Hero";
+import TrendingSection from "@/components/HomePage/TrendingSection";
 
 export default function Home() {
   return (
