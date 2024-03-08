@@ -1,7 +1,5 @@
 import React from "react";
-import Image from "next/image";
-import pasta from "../../assets/pasta.jpg";
-import Searchbar from "./Searchbar";
+import Searchbar from "../SharedComponents/Searchbar";
 
 const Hero = () => {
   return (
