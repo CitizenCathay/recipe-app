@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import * as api from "../../utils/api";
 
@@ -14,12 +14,18 @@ const Searchbar = () => {
     setSearchTerm(e.target.value);
   };
 
+  useEffect(() => {
+    localStorage.setItem("recipes", JSON.stringify(recipes));
+    localStorage.setItem("searchTerm", searchTerm);
+    //console.log("Recipes stored in localStorage:", recipes);
+  }, [recipes, searchTerm]);
+
   const handleFormSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
     try {
       const recipes = await api.searchRecipes(searchTerm, 1);
       setRecipes(recipes);
-      console.log(recipes);
+      //console.log(recipes);
 
       router.push(`/search/${searchTerm}`);
     } catch (e) {
