@@ -1,9 +1,10 @@
 "use client";
 import RecipeCard from "@/components/ResultsPage/RecipeCard";
 import React, { useEffect, useState } from "react";
+import { Recipe } from "../../../utils/types";
 
 const SearchResults = () => {
-  const [recipes, setRecipes] = useState([]);
+  const [recipes, setRecipes] = useState<Recipe[]>([]);
   const [totalResults, setTotalResults] = useState(0); // Initialize totalResults
   const [searchTerm, setSearchTerm] = useState<string>("");
 
@@ -27,15 +28,15 @@ const SearchResults = () => {
 
   return (
     <>
-      <section className="mb-10">
-        <h1 className="font-semiboldbold mt-6 text-2xl">
+      <section className="mb-6 sm:mb-10">
+        <h1 className="font-semiboldbold mt-6 text-xl md:text-2xl">
           Showing <span>{totalResults}</span> results for &quot;{searchTerm}
           &quot;
         </h1>
       </section>
-      <section className="flex-wrap flex justify-between">
+      <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 sm:gap-x-12">
         {recipes.map((recipe, index) => (
-          <RecipeCard key={index} recipe={recipe} />
+          <RecipeCard key={recipe.id} id={recipe.id} recipe={recipe} />
         ))}
       </section>
     </>
