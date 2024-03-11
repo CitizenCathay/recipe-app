@@ -37,6 +37,12 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 Photo by <a href="https://unsplash.com/@tasikola_pl?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Aleksandra Tanasiienko</a> on <a href="https://unsplash.com/photos/pasta-with-sauce-on-white-ceramic-plate-0y6eMd8vevA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 
-Photo by <a href="https://unsplash.com/@ndg_visuals?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Nicholas Grande</a> on <a href="https://unsplash.com/photos/pasta-dish-on-black-ceramic-bowl-d9jcPTRD9fo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-
 Photo by <a href="https://unsplash.com/@his_and?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">ikhsan baihaqi</a> on <a href="https://unsplash.com/photos/pasta-dish-on-brown-ceramic-bowl-4QXE7YQy7eo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+
+Photo by <a href="https://unsplash.com/@eastcoastkitchen?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Andy Hay</a> on <a href="https://unsplash.com/photos/cooked-food-on-stainless-steel-bowl-ZN-TT10kf4o?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+
+Photo by <a href="https://unsplash.com/@clorisyy?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Cloris Ying</a> on <a href="https://unsplash.com/photos/round-white-ceramic-bowl-with-seafoods-rmdo8r9iGfw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+
+Photo by <a href="https://unsplash.com/@cerachiuu?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Cera</a> on <a href="https://unsplash.com/photos/sliced-vegetables-on-stainless-steel-cooking-pot-muV_8wy4mzw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+
+Photo by <a href="https://unsplash.com/@emanuelekstrom?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Emanuel Ekström</a> on <a href="https://unsplash.com/photos/pasta-dish-on-white-ceramic-plate-qxvhDhjFy4o?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
