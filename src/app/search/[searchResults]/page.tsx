@@ -35,7 +35,7 @@ const SearchResults = () => {
         </h1>
       </section>
       <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 sm:gap-x-12">
-        {recipes.map((recipe, index) => (
+        {recipes.map((recipe) => (
           <RecipeCard key={recipe.id} id={recipe.id} recipe={recipe} />
         ))}
       </section>
