@@ -9,8 +9,13 @@ const RecipeCard = ({ recipe, id }: Props) => {
     console.log({ id });
     console.log({ storedSearchTerm });
     // Navigate to the dynamic recipe page for the clicked recipe
+    localStorage.setItem("selectedRecipe", JSON.stringify(recipe));
     if (id && storedSearchTerm) {
-      router.push(`/search/${storedSearchTerm}/${id}`);
+      router.push(
+        `/search/${encodeURIComponent(storedSearchTerm)}/${encodeURIComponent(
+          id
+        )}`
+      );
     } else {
       console.error("Missing id or stored search term.");
     }
