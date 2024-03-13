@@ -109,11 +109,23 @@ const RecipePage = () => {
                   step: string;
                   length: { number: number; units: string };
                 }[]
-              )?.map((step) => (
-                <li key={step.number} className="mt-2">
-                  {step.step}
-                </li>
-              ))
+              )?.length > 0 ? (
+                /* @ts-ignore */ (
+                  selectedRecipe?.analyzedInstructions?.[0]?.steps as {
+                    number: number;
+                    step: string;
+                    length: { number: number; units: string };
+                  }[]
+                ).map((step) => (
+                  <li key={step.number} className="mt-2">
+                    {step.step}
+                  </li>
+                ))
+              ) : (
+                <p className="text-2xl">
+                  Instructions unavailable for this recipe
+                </p>
+              )
             }
           </ol>
         </section>
