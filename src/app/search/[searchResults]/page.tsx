@@ -10,10 +10,9 @@ const SearchResults = () => {
   const [searchTerm, setSearchTerm] = useState<string>("");
   const pageNumber = useRef(1);
 
-  const storedRecipes = localStorage.getItem("recipes");
-
   useEffect(() => {
     // Retrieve the stored array from localStorage
+    const storedRecipes = localStorage.getItem("recipes");
     const storedSearchTerm = localStorage.getItem("searchTerm");
     if (storedRecipes) {
       // Parse the JSON string back to an array
@@ -38,29 +37,19 @@ const SearchResults = () => {
     }
   };
 
-  let parsedPrevRecipes: Recipe[] = [];
-  //logic to handle page navigation runtime error
-  if (recipes !== undefined) {
-    localStorage.setItem("lastFetchedRecipes", JSON.stringify(recipes));
-
-    const prevRecipesString = localStorage.getItem("lastFetchedRecipes");
-    parsedPrevRecipes = prevRecipesString ? JSON.parse(prevRecipesString) : [];
-  }
-
   return (
     <>
       <section className="mb-6 sm:mb-10">
         <h1 className="font-semiboldbold mt-6 text-xl md:text-2xl">
-          Showing <span>{totalResults}</span> results for &quot;{searchTerm}
-          &quot;
+          {recipes == undefined
+            ? `Showing results for " "`
+            : `Showing ${totalResults} results for "${searchTerm}"`}
         </h1>
       </section>
       <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 sm:gap-x-12">
-        {(recipes !== undefined ? recipes : parsedPrevRecipes).map(
-          (recipe: Recipe) => (
-            <RecipeCard key={recipe.id} id={recipe.id} recipe={recipe} />
-          )
-        )}
+        {(recipes !== undefined ? recipes : []).map((recipe: Recipe, index) => (
+          <RecipeCard key={recipe.id + index} id={recipe.id} recipe={recipe} />
+        ))}
       </section>
       <section className="flex justify-center">
         <button
