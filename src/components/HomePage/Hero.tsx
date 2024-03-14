@@ -1,5 +1,5 @@
 import React from "react";
-import Searchbar from "../SharedComponents/Searchbar";
+import Searchbar from "../HomePage/Searchbar";
 
 const Hero = () => {
   return (
