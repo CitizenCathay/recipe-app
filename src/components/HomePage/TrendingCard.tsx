@@ -9,10 +9,9 @@ import * as api from "../../utils/api";
 const TrendingCard: React.FC<TrendingCardProps> = ({
   index,
   title,
-  keyword,
   pictureUrl,
+  searchTerms,
 }) => {
-  const searchTerms = ["Italian", "Chinese", "Spanish", "Indian"];
   const [recipes, setRecipes] = useState([]);
   const searchTerm = searchTerms[index];
   const router = useRouter(); // Initialize useRouter
@@ -23,19 +22,15 @@ const TrendingCard: React.FC<TrendingCardProps> = ({
     try {
       const recipes = await api.searchTrending(searchTerm, 1);
       setRecipes(recipes);
-      console.log(recipes);
       router.push(`/search/${searchTerm}`);
     } catch (e) {
       console.log(e);
     }
-
-    console.log("Search query:", searchTerm);
   };
 
   useEffect(() => {
     localStorage.setItem("recipes", JSON.stringify(recipes));
     localStorage.setItem("searchTerm", searchTerm);
-    //console.log("Recipes stored in localStorage:", recipes);
   }, [recipes, searchTerm]);
 
   return (

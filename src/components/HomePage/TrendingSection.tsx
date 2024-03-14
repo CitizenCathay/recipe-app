@@ -24,6 +24,7 @@ const TrendingSection = () => {
       title: "Indian Cuisine",
     },
   ];
+  const searchTerms = ["Italian", "Chinese", "Spanish", "Indian"];
   return (
     <section>
       <h2 className="text-2xl mt-4 mb-2 font-bold">Trending Cuisines</h2>
@@ -35,6 +36,7 @@ const TrendingSection = () => {
             keyword={data.keyword}
             title={data.title}
             pictureUrl={data.pictureUrl}
+            searchTerms={searchTerms}
           />
         ))}
       </div>
