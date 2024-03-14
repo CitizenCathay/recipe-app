@@ -42,9 +42,10 @@ export interface TrendingCardProps {
   keyword: string;
   title: string;
   pictureUrl: string;
+  searchTerms: Array<string>;
 }
 
-export interface Props {
+export interface RecipeCardProps {
   recipe: Recipe;
   id: number;
 }

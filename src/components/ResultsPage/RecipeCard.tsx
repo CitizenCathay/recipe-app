@@ -1,13 +1,11 @@
 import React from "react";
-import { Props } from "../../utils/types";
+import { RecipeCardProps } from "../../utils/types";
 import { useRouter } from "next/navigation";
 
-const RecipeCard = ({ recipe, id }: Props) => {
+const RecipeCard = ({ recipe, id }: RecipeCardProps) => {
   const storedSearchTerm = localStorage.getItem("searchTerm");
   const router = useRouter(); // Initialize useRouter
   const handleClick = () => {
-    console.log({ id });
-    console.log({ storedSearchTerm });
     // Navigate to the dynamic recipe page for the clicked recipe
     localStorage.setItem("selectedRecipe", JSON.stringify(recipe));
     if (id && storedSearchTerm) {
@@ -38,7 +36,7 @@ const RecipeCard = ({ recipe, id }: Props) => {
 
   return (
     <div
-      className="recipe__card cursor-pointer mb-10 sm:mb-8 w-80 sm:w-64 md:w-full rounded-lg mx-auto shadow-md group"
+      className="recipe__card cursor-pointer mb-10 sm:mb-8 w-80 sm:w-64 md:w-full rounded-lg mx-auto shadow-md group delay-50 transition duration-300 transform hover:scale-110 active:scale-100"
       onClick={handleClick}
     >
       <img
