@@ -1,6 +1,6 @@
 import React from "react";
 
-const Contact = () => {
+const ContactPage = () => {
   return (
     <>
       <section className="mt-10 flex justify-center">
@@ -43,4 +43,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactPage;
