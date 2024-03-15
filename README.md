@@ -22,7 +22,7 @@ Welcome to my recipe application deployed to Vercel and built using React, Next.
 
 - Responsive Design: The application is designed to work on various screen sizes, making it accessible across different devices.
 
-![Image of application being used](/public/results_image.JPG)
+![Image of application being used](/public/results_image.jpg)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
