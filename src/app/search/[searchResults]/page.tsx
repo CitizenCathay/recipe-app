@@ -30,6 +30,7 @@ const SearchResults = () => {
     const nextPage = pageNumber.current + 1;
     try {
       const nextRecipes = await api.searchRecipes(searchTerm, nextPage);
+      // Update the 'recipes' state variable by concatenating the existing recipes with the recipes fetched for the next page
       setRecipes([...recipes, ...nextRecipes.results]);
       pageNumber.current = nextPage;
     } catch (error) {
@@ -41,12 +42,16 @@ const SearchResults = () => {
     <>
       <section className="mb-6 sm:mb-10">
         <h1 className="font-semiboldbold mt-6 text-xl md:text-2xl">
+          {/* Conditional rendering based on the existence of 'recipes' */}
+          {/* If 'recipes' is undefined, display a message indicating no results */}
+          {/* Otherwise, display the total number of results and the search term */}
           {recipes == undefined
             ? `Showing results for " "`
             : `Showing ${totalResults} results for "${searchTerm}"`}
         </h1>
       </section>
       <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 sm:gap-x-12">
+        {/* Map over the 'recipes' array, or an empty array if 'recipes' is undefined */}
         {(recipes !== undefined ? recipes : []).map((recipe: Recipe, index) => (
           <RecipeCard key={recipe.id + index} id={recipe.id} recipe={recipe} />
         ))}

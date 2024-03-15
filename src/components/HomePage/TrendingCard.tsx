@@ -16,29 +16,35 @@ const TrendingCard: React.FC<TrendingCardProps> = ({
   const searchTerm = searchTerms[index];
   const router = useRouter(); // Initialize useRouter
 
-  const handleSearch = async (
-    event: React.MouseEvent<HTMLAnchorElement, MouseEvent>
-  ) => {
+  //Asynchronous function that handles the search functionality
+  const handleSearch = async () => {
     try {
+      // Call the searchTrending function from the 'api' module with the provided params
+      // Wait for the searchTrending function to complete and return the search results.
       const recipes = await api.searchTrending(searchTerm, 1);
       setRecipes(recipes);
+      // Use the 'router' object to navigate to the search results page with the current 'searchTerm'.
       router.push(`/search/${searchTerm}`);
     } catch (e) {
       console.log(e);
     }
   };
 
+  //useEffect hook used to update the local storage whenever the 'recipes' or 'searchTerm' state variables change.
   useEffect(() => {
     localStorage.setItem("recipes", JSON.stringify(recipes));
     localStorage.setItem("searchTerm", searchTerm);
   }, [recipes, searchTerm]);
 
   return (
-    <a className="trending__card cursor-pointer group" onClick={handleSearch}>
+    <a
+      className="trending__card cursor-pointer group w-4/5"
+      onClick={handleSearch}
+    >
       <Image
         src={pictureUrl}
         alt="image of pasta"
-        className="rounded-xl"
+        className="rounded-xl w-full"
         width={220}
         height={220}
       />
