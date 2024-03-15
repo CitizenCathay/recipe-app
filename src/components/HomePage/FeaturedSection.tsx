@@ -32,8 +32,8 @@ const ContentSection = () => {
   const searchTerms = ["Dumplings", "Cake", "Steak", "Burgers", "Waffles"];
   return (
     <section>
-      <h2 className="text-2xl mt-4 mb-2 font-bold">Trending Cuisines</h2>
-      <div className="cards_container flex justify-between gap-4">
+      <h2 className="text-2xl mt-4 mb-2 font-bold">Featured Recipes</h2>
+      <div className="cards_container flex flex-wrap sm:flex-nowrap mx-auto justify-around sm:justify-between gap-4">
         {trendingData.map((data, index) => (
           <TrendingCard
             key={index}
