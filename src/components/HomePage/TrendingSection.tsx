@@ -25,6 +25,10 @@ const TrendingSection = () => {
     },
   ];
   const searchTerms = ["Italian", "Chinese", "Spanish", "Indian"];
+  const h3Styles =
+    "font-semibold text-sm sm:text-base pt-1 group-hover:underline underline-offset-4";
+  const paragraphStyles =
+    "trending__card-time text-sm sm:text-base no-underline";
   return (
     <section>
       <h2 className="text-2xl mt-4 mb-2 font-bold">Trending Cuisines</h2>
@@ -37,6 +41,8 @@ const TrendingSection = () => {
             title={data.title}
             pictureUrl={data.pictureUrl}
             searchTerms={searchTerms}
+            h3Styles={h3Styles}
+            paragraphStyles={paragraphStyles}
           />
         ))}
       </div>
