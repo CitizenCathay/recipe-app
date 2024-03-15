@@ -1,3 +1,27 @@
+<!-- ABOUT THE PROJECT -->
+
+## About The Project
+
+![Image of application](/public/desktop_image.jpg)
+
+#### Recipe web application
+
+Welcome to my recipe application deployed to Vercel and built using React, Next.js, Tailwind CSS and Express.js. I am an avid cook and gym goer, because of this, I regularly find myself scrutinizing the nutritional content of recipes I prepare. However, this information is not always available with all recipes found online. Thus, I wanted to build an application that could not only help me find delicious recipes but also clearly display their nutritional information, which would allow me to make quick judgements if the recipe was something I wanted to make.
+
+#### Features
+
+- Search function: Users can enter one or multiple keywords to look for recipes.
+
+- Search function returns 15 recipe results in the search results page but the view more button offers pagination features and displays more recipes when clicked.
+
+- Featured and trending cards that are clickable which display search results for that category.
+
+- Recipe cards grid in the search results page that are interactive and when clicked, bring the user to a new page that contains detailed recipe information.
+
+- Responsive Design: The application is designed to work on various screen sizes, making it accessible across different devices.
+
+![Image of application being used](/public/results_image.JPG)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -34,6 +58,8 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Image credits
 
 Photo by <a href="https://unsplash.com/@tasikola_pl?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Aleksandra Tanasiienko</a> on <a href="https://unsplash.com/photos/pasta-with-sauce-on-white-ceramic-plate-0y6eMd8vevA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 
