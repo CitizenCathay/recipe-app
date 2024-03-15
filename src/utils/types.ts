@@ -43,6 +43,8 @@ export interface TrendingCardProps {
   title: string;
   pictureUrl: string;
   searchTerms: Array<string>;
+  h3Styles: string;
+  paragraphStyles: string;
 }
 
 export interface RecipeCardProps {
