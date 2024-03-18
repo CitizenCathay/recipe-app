@@ -4,11 +4,11 @@
 
 ![Image of application](/public/homepage.jpg)
 
-#### Recipe web application
+### Recipe Web Application
 
 Welcome to my recipe application deployed to Vercel and built using React, Next.js, Tailwind CSS and Express.js. I am an avid cook and gym goer, as a result, I regularly find myself scrutinizing the nutritional content of recipes I prepare. However, this information is not always available with all recipes found online. Thus, I wanted to build an application that could not only help me find delicious recipes but also clearly display their nutritional information, which would allow me to make quick judgements if the recipe was something I wanted to make.
 
-#### Features
+### Features
 
 - Search function: Users can enter one or multiple keywords to look for recipes.
 
@@ -23,6 +23,19 @@ Welcome to my recipe application deployed to Vercel and built using React, Next.
 - Responsive Design: The application is designed to work on various screen sizes, making it accessible across different devices.
 
 ![Image of application being used](/public/results_page.jpg)
+
+### What I learned
+
+- **Enhanced Proficiency in React:** Deepened my understanding of React and React hooks. Building components like `searchBar` and `trendingCard` deepened my understanding of hooks like `useEffect` and `useState`, resulting in cleaner and more maintainable code.
+
+- **API Calls:** Learned how to make API calls from the frontend initially and then learned to implement API calling in backend for improved security which helped me better understand the flow of data between frontend and backend systems.
+
+- **Static Typing:** Improved my understanding on static typing and can better appreciate how static typing helps with identifying potential errors early which allowed me to address them.
+
+- **Component Composition:** Utilizing component composition patterns like nesting `recipeCard` within `searchResults` helped me build clean modular code which facilitated code maintenance and scalability.
+
+- **Continuous learning & resilience:** I encountered challenges such as runtime errors, routing issues, problems with calling the API on the backend and deployment to Vercel. I learned how to better engage with documentation and experiment with different solutions to overcome these issues.
+  <br></br>
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
@@ -41,8 +54,6 @@ bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
